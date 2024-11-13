@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CadastroEventosApp"
+             x:Class="CadastroEventosApp.ResumoEventoPage"
+             Title="Resumo do Evento"
+             BackgroundColor="#F9F9F9">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+
+            <Label Text="Resumo do Evento"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#333333"/>
+
+            <Frame Padding="15" BorderColor="#3498DB" CornerRadius="15" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Nome do Evento" FontSize="18" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Label x:Name="nomeEventoLabel" FontSize="16" TextColor="#555555"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BorderColor="#3498DB" CornerRadius="15" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Data de Início" FontSize="18" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Label x:Name="dataInicioLabel" FontSize="16" TextColor="#555555"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BorderColor="#3498DB" CornerRadius="15" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Data de Término" FontSize="18" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Label x:Name="dataTerminoLabel" FontSize="16" TextColor="#555555"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BorderColor="#3498DB" CornerRadius="15" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Número de Participantes" FontSize="18" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Label x:Name="numeroParticipantesLabel" FontSize="16" TextColor="#555555"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BorderColor="#3498DB" CornerRadius="15" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Local do Evento" FontSize="18" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Label x:Name="localLabel" FontSize="16" TextColor="#555555"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BorderColor="#3498DB" CornerRadius="15" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Custo por Participante" FontSize="18" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Label x:Name="custoParticipanteLabel" FontSize="16" TextColor="#555555"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BorderColor="#3498DB" CornerRadius="15" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Duração do Evento (dias)" FontSize="18" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Label x:Name="duracaoLabel" FontSize="16" TextColor="#555555"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BorderColor="#3498DB" CornerRadius="15" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Custo Total" FontSize="18" FontAttributes="Bold" TextColor="#2C3E50"/>
+                    <Label x:Name="custoTotalLabel" FontSize="16" TextColor="#555555"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
